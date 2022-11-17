@@ -134,6 +134,9 @@ Plots of the evolution of the "confusion matrices" or PCA plots using adapters. 
 ![](figs/st_pca.gif)
 ![](figs/pca.gif)
 
+![](figs/cossim_cm.gif)
+![](figs/cm_mse.gif)
+
 ## Further work
 
 There’s a high probability that some of my implementations are incorrect, and that some “results” are purely numerical (meaning: the experiments are doing what I told them to do, without knowing that I told them to do that). So, a first step would be:
