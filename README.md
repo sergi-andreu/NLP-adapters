@@ -88,8 +88,8 @@ Without standardization, the baseline metric is 0.68 for CosSim and 0.55 for MSE
 ## Results for monolingual models
 We can also use [bert-base-cased](https://huggingface.co/bert-base-cased?text=Paris+is+the+%5BMASK%5D+of+France), which has not been trained on the Czech language, to check if the metrics and plots make sense .
 
-![Monolingual PCA plots](monoling_pca_plots.JPG)
-![Monolingual plots](monoling_plots.JPG)
+![Monolingual PCA plots](figs/monoling_pca_plots.JPG)
+![Monolingual plots](figs/monoling_plots.JPG)
 
 ## Using adapters
 
@@ -127,8 +127,12 @@ Where x[::-1] is a flipped version of x. This way, we are sure that x[::-1] and 
 Plots of the evolution of the "confusion matrices" or PCA plots using adapters. These indicate that the implementation is not quite correct or optimal (I should further work on this!). Probably, it is due to having a bad (non-convex, and not class-weighter) loss function.
 
 ### Using a naive loss, without standardizing
-![](naive_nonst_st.gif)
-![](naive_nonst_nonst.gif)
+![Gif naive](figs/naive_nonst_st.gif)
+![Gif naive](figs/naive_nonst_nonst.gif)
+
+### Using a better loss
+![](figs/st_pca.gif)
+![](figs/pca.gif)
 
 ## Further work
 
